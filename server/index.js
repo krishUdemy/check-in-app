@@ -13,7 +13,7 @@ const Bookings = [
   {
     bookingCode: 'LT7RCI',
     lastName: 'Perry Chase',
-    travelDate: '2024-01-01T22:10:10',
+    travelDate: '2024-01-01T20:10:10',
   },
   {
     bookingCode: 'KW3RMU',
@@ -36,14 +36,14 @@ const Bookings = [
     travelDate: '2024-01-05T22:36:41',
   },
   {
-    bookingCode: 'FX3NMY',
-    lastName: 'Garrett Reynolds',
-    travelDate: '2023-12-30T03:42:04',
-  },
-  {
     bookingCode: 'UY5IMW',
     lastName: 'Jermaine Jones',
     travelDate: '2024-01-06T23:11:18',
+  },
+  {
+    bookingCode: 'FX3NMY',
+    lastName: 'Garrett Reynolds',
+    travelDate: '2023-12-30T03:42:04',
   },
   {
     bookingCode: 'ZR7PRN',
@@ -144,7 +144,7 @@ const RootQueryType = new GraphQLObjectType({
           throw new GraphQLError('Invalid booking code.', { extensions: { code: 9001 } });
         }
       
-        if (booking.lastName !== args.lastName) {
+        if (booking.lastName.toUpperCase() !== args.lastName.toUpperCase()) {
           throw new GraphQLError('Family name is invalid.', { extensions: { code: 9002 } });
         }
       
