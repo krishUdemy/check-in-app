@@ -1,0 +1,35 @@
+<main class="main">
+  <h2>Web Check-in</h2>
+
+  <p *ngIf="error" class="error-message">
+    {{ error }}
+  </p>
+
+  <form class="checkin-form" [formGroup]="checkInForm" (ngSubmit)="validateCheckIn()">
+    <label>
+      <span class="label-field">Booking code</span>
+      <input class="input-field" type="text" name="bookingCode" formControlName="bookingCode" maxlength="6"
+        oninput="this.value = this.value.toUpperCase()">
+      <div
+        *ngIf="checkInForm.get('bookingCode')?.invalid && (checkInForm.get('bookingCode')?.dirty || checkInForm.get('bookingCode')?.touched)">
+        <div class="label-error" *ngIf="checkInForm.get('bookingCode')?.errors?.['required']">Booking code is
+          required.</div>
+        <div class="label-error" *ngIf="checkInForm.get('bookingCode')?.errors?.['pattern']">
+          Please enter only alphanumeric characters.</div>
+      </div>
+    </label>
+    <br>
+    <label>
+      <span class="label-field">Last name</span>
+      <input class="input-field" type="text" name="lastName" formControlName="lastName">
+      <div
+        *ngIf="checkInForm.get('lastName')?.invalid && (checkInForm.get('lastName')?.dirty || checkInForm.get('lastName')?.touched)">
+        <div class="label-error" *ngIf="checkInForm.get('lastName')?.errors?.['required']">Last name is required.</div>
+        <div class="label-error" *ngIf="checkInForm.get('lastName')?.errors?.['pattern']">Please enter alphabetic
+          characters.</div>
+      </div>
+    </label>
+    <br>
+    <button class="checkin-button" [disabled]="checkInForm.invalid">Check in</button>
+  </form>
+</main>

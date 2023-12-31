@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+/* Mobile-first styles (applied to all screen sizes) */
+
+/* Styles for small devices (up to 576px) */
+@media (min-width: 0px) and (max-width: 576px) {
+    /* CSS rules specific for mobile devices */
+  }
+  
+  /* Styles for tablets and larger devices in portrait mode (577px - 768px) */
+  @media (min-width: 577px) and (max-width: 768px) {
+    /* CSS rules for tablets in portrait or larger mobile devices */
+  }
+  
+  /* Styles for tablets in landscape and larger devices (769px - 992px) */
+  @media (min-width: 769px) and (max-width: 992px) {
+    /* CSS rules for tablets in landscape or larger viewports */
+  }
+  
+  /* Styles for standard desktops and laptops (993px - 1200px) */
+  @media (min-width: 993px) and (max-width: 1200px) {
+    /* CSS rules for standard desktop and laptop screens */
+  }
+  
+  /* Styles for larger desktops and high-resolution screens (1201px and above) */
+  @media (min-width: 1201px) {
+    /* CSS rules for large desktop screens and beyond */
+  }
+  

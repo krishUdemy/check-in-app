@@ -1,0 +1,52 @@
+:host {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+}
+
+h1 {
+  font-size: 1.5714rem;
+}
+
+.header {
+  font-weight: 600;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #028e93;
+  color: white;
+}
+
+.header img {
+  margin: 0 16px;
+}
+
+.content {
+  display: flex;
+  margin: 60px auto 32px;
+  padding: 0 16px;
+  max-width: 960px;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 48rem) {
+  h1 {
+    font-size: 2.5714rem;
+  }
+}
