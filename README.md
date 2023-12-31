@@ -16,8 +16,8 @@ node index.js
 ```
 ## Test data
 
-1. Scenario: check-in success
-Mock data has been configured to test success scenarios till 5th January, 2024 till 23:10.
+1. Scenario: check-in success.
+<br>Mock data has been configured to test success scenarios till 5th January, 2024 till 23:10.
 Use the below test data based on the day you test this application.
 
 ```
