@@ -13,7 +13,7 @@ const Bookings = [
   {
     bookingCode: 'LT7RCI',
     lastName: 'Perry Chase',
-    travelDate: '2024-01-01T20:10:10',
+    travelDate: '2024-01-01T22:10:10',
   },
   {
     bookingCode: 'KW3RMU',
@@ -43,7 +43,7 @@ const Bookings = [
   {
     bookingCode: 'UY5IMW',
     lastName: 'Jermaine Jones',
-    travelDate: '2024-02-25T10:11:18',
+    travelDate: '2024-01-06T23:11:18',
   },
   {
     bookingCode: 'ZR7PRN',
